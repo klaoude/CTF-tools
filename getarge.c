@@ -14,18 +14,18 @@
 
 int main(int argc, char** argv)
 {
-	    char* ptr;
+	char* ptr;
 
-	        if(argc < 3)
-			    {
-				            printf("Usage: %s <env> <prog>\n", argv[0]);
-					            exit(0);
-						        }
+	if(argc < 3)
+	{		    {
+		printf("Usage: %s <env> <prog>\n", argv[0]);
+		exit(0);
+	}
 
-		    ptr = getenv(argv[1]);
-		        ptr += (strlen(argv[0]) - strlen(argv[2])) * 2;
+	ptr = getenv(argv[1]);
+	ptr += (strlen(argv[0]) - strlen(argv[2])) * 2;
 
-			    printf("%s at %p\n", argv[1], ptr);
+	printf("%s at %p\n", argv[1], ptr);
 
-			        return 0;
+	return 0;
 }
