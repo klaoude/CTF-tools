@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 	char* ptr;
 
 	if(argc < 3)
-	{		    {
+	{		    
 		printf("Usage: %s <env> <prog>\n", argv[0]);
 		exit(0);
 	}
